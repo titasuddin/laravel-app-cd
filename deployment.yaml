@@ -46,7 +46,7 @@ spec:
       - name: laravel-app-container
 
 
-        image: nginx:latest
+        image: nginx
 
 
         ports:
