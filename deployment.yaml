@@ -7,7 +7,7 @@ kind: Deployment
 metadata:
 
 
-  name: app1-deployment
+  name: laravel-app-deployment
 
 
 spec:
@@ -22,7 +22,7 @@ spec:
     matchLabels:
 
 
-      app: app1
+      app: laravel-app
 
 
   template:
@@ -34,7 +34,7 @@ spec:
       labels:
 
 
-        app: app1
+        app: laravel-app
 
 
     spec:
@@ -43,15 +43,13 @@ spec:
       containers:
 
 
-      - name: app1-container
+      - name: laravel-app-container
 
 
-        image: titasuddin/app1:latest
+        image: titasuddin/laravel-app:1.0.0-54
 
 
         ports:
 
 
-        - containerPort: 80
-      nodeSelector:
-        kubernetes.io/hostname: k8worker1
+        - containerPort: 8080
