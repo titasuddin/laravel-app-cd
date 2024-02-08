@@ -52,4 +52,4 @@ spec:
         ports:
 
 
-        - containerPort: 8090
+        - containerPort: 8081
