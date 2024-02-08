@@ -46,10 +46,10 @@ spec:
       - name: laravel-app-container
 
 
-        image: titasuddin/laravel-app:latest
+        image: nginx:latest
 
 
         ports:
 
 
-        - containerPort: 8081
+        - containerPort: 80
