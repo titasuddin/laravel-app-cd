@@ -7,7 +7,7 @@ kind: Deployment
 metadata:
 
 
-  name: laravel-app:1.0.0-75
+  name: laravel-app deployment
 
 
 spec:
@@ -22,7 +22,7 @@ spec:
     matchLabels:
 
 
-      app: laravel-app:1.0.0-75
+      app: laravel-app
 
 
   template:
@@ -34,7 +34,7 @@ spec:
       labels:
 
 
-        app: laravel-app:1.0.0-75
+        app: laravel-app
 
 
     spec:
