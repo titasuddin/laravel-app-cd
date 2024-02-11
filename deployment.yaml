@@ -46,7 +46,7 @@ spec:
       - name: laravel-app
 
 
-        image: titasuddin/laravel-app:1.0.0-76
+        image: titasuddin/laravel-app:1.0.0-77
 
 
         ports:
