@@ -7,7 +7,7 @@ kind: Deployment
 metadata:
 
 
-  name: laravel-app deployment
+  name: laravel-app-deployment
 
 
 spec:
@@ -43,7 +43,7 @@ spec:
       containers:
 
 
-      - name: laravel-app:1.0.0-75
+      - name: laravel-app
 
 
         image: titasuddin/laravel-app:1.0.0-75
