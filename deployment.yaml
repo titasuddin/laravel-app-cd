@@ -7,7 +7,7 @@ kind: Deployment
 metadata:
 
 
-  name: laravel-app:1.0.0-74
+  name: laravel-app:1.0.0-75
 
 
 spec:
@@ -22,7 +22,7 @@ spec:
     matchLabels:
 
 
-      app: laravel-app:1.0.0-74
+      app: laravel-app:1.0.0-75
 
 
   template:
@@ -34,7 +34,7 @@ spec:
       labels:
 
 
-        app: laravel-app:1.0.0-74
+        app: laravel-app:1.0.0-75
 
 
     spec:
@@ -43,10 +43,10 @@ spec:
       containers:
 
 
-      - name: laravel-app:1.0.0-74
+      - name: laravel-app:1.0.0-75
 
 
-        image: titasuddin/laravel-app:1.0.0-74
+        image: titasuddin/laravel-app:1.0.0-75
 
 
         ports:
