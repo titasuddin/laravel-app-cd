@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-              APP_NAME = "laravel-app"
-    }
 
     stages {
         stage("Cleanup Workspace") {
@@ -21,7 +18,8 @@ pipeline {
             steps {
                 sh """
                    cat deployment.yaml
-                   sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' deployment.yaml
+                
+                   sed -i "s|image: titasuddin/laravel-app:.*|image: titasuddin/laravel-app:${IMAGE_TAG}|g" deployment.yaml
                    cat deployment.yaml
                 """
             }
